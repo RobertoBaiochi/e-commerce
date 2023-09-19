@@ -2,7 +2,6 @@
 
 import { useEffect } from 'react';
 
-import { Modal } from '@/components/ui/modal';
 import { useStoreModal } from '@/hooks/use-store-modal';
 
 const SetupPage = () => {
@@ -15,11 +14,13 @@ const SetupPage = () => {
     }
   }, [onOpen, isOpen])
 
-  return (
-    <div>
-      Root Page
-    </div>
-  );
+  return null
 };
 
 export default SetupPage;
+
+{/*
+  Essa página está retornando NULL porque só vai ser usada
+  para uso de Trigger do Modal.
+
+*/}
